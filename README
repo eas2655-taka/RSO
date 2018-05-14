@@ -1,5 +1,5 @@
 -----------------------------
-Regional Southern Ocean (RSO) 
+Regional Southern Ocean (RSO)
 -----------------------------
 
 - to be used on gulf
@@ -8,23 +8,30 @@ Regional Southern Ocean (RSO)
 - execute the following steps
 - model preparation is done in MATLAB
 
-0. topography generation: create_topo.m 
-  Interpolate & smooth etopo2 
+>>> Do this first (only once)
+  ssh to gulf
+  Make a clone of this directory:
+  $ git clone (insert github URL) /data/$USER/RSO
+  Start MATLAB:
+  $ /usr/local/packages/MATLAB/R2012a/bin/matlab -r '\''opengl software'\'' -nodesktop -nosplash
+  Execute the following commands in order:
+
+0. topography generation: create_topo.m
+  Interpolate & smooth etopo2
 
 1. grid generation: create_vert_grid.m 
 * Skip this unless you are an expert MITgcm user
-* for 42 and 100 vertical levels, it is already completed. 
+* for 42 and 100 vertical levels, it is already completed.
 
 2. surface forcing: create_surfforcing.m
-* Currently, only monthly NCEP1 is available 
+* Currently, only monthly NCEP1 is available
 * EraInterim needs to be added in the future
 
 3. side boundary condition: create_bcs.m
 * SODA 2.2.4 monthly
 
 4. initial condition in T and S: create_init.m
-* SODA 2.2.4 
+* SODA 2.2.4
 
 5. surface SST and SSS restoring fields: create_sst_sss_restoring.m
 * SODA 2.2.4 monthly
-
