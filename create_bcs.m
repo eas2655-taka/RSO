@@ -22,9 +22,6 @@ zn=-squeeze(rdmds([srcdir,'RC']));
 % set years of side bcs to be extracted
 yr = 1980:1980;
 
-% set years of side bcs to be extracted 
-yr = 1980:1980;
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%--- do not modify under this line---
 
@@ -130,19 +127,18 @@ for i=1:length(yr);
 
  % writing the files
  for n=1:length(vars)
-   fid=fopen(char([caseroot,runcase,'/SODA_',vars{n},'_east_',num2str(yr0),'.bin']),'w','ieee-be'); 
-   fwrite(fid,tmpE1(:,:,:,n),'float32'); 
+   fid=fopen(char([caseroot,runcase,'/SODA_',vars{n},'_east_',num2str(yr0),'.bin']),'w','ieee-be');
+   fwrite(fid,tmpE1(:,:,:,n),'float32');
    fclose(fid);
-   fid=fopen(char([caseroot,runcase,'/SODA_',vars{n},'_west_',num2str(yr0),'.bin']),'w','ieee-be'); 
-   fwrite(fid,tmpW1(:,:,:,n),'float32'); 
+   fid=fopen(char([caseroot,runcase,'/SODA_',vars{n},'_west_',num2str(yr0),'.bin']),'w','ieee-be');
+   fwrite(fid,tmpW1(:,:,:,n),'float32');
    fclose(fid);
-   fid=fopen(char([caseroot,runcase,'/SODA_',vars{n},'_north_',num2str(yr0),'.bin']),'w','ieee-be'); 
-   fwrite(fid,tmpN1(:,:,:,n),'float32'); 
+   fid=fopen(char([caseroot,runcase,'/SODA_',vars{n},'_north_',num2str(yr0),'.bin']),'w','ieee-be');
+   fwrite(fid,tmpN1(:,:,:,n),'float32');
    fclose(fid);
-   fid=fopen(char([caseroot,runcase,'/SODA_',vars{n},'_south_',num2str(yr0),'.bin']),'w','ieee-be'); 
-   fwrite(fid,tmpS1(:,:,:,n),'float32'); 
+   fid=fopen(char([caseroot,runcase,'/SODA_',vars{n},'_south_',num2str(yr0),'.bin']),'w','ieee-be');
+   fwrite(fid,tmpS1(:,:,:,n),'float32');
    fclose(fid);
  end
 
 end
-
