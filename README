@@ -12,6 +12,9 @@ Regional Southern Ocean (RSO)
   ssh to gulf
   Make a clone of this directory:
   $ git clone (insert github URL) /data/$USER/RSO
+
+  After this do the following
+
   Start MATLAB:
   $ /usr/local/packages/MATLAB/R2012a/bin/matlab -r '\''opengl software'\'' -nodesktop -nosplash
   Execute the following commands in order:
@@ -19,7 +22,7 @@ Regional Southern Ocean (RSO)
 0. topography generation: create_topo.m
   Interpolate & smooth etopo2
 
-1. grid generation: create_vert_grid.m 
+1. grid generation: create_vert_grid.m
 * Skip this unless you are an expert MITgcm user
 * for 42 and 100 vertical levels, it is already completed.
 
@@ -35,3 +38,14 @@ Regional Southern Ocean (RSO)
 
 5. surface SST and SSS restoring fields: create_sst_sss_restoring.m
 * SODA 2.2.4 monthly
+
+  At this point you created binary input files necessary to drive the model
+
+  Execution:
+
+  Do you have an account on atlas-6 system?
+  Download codes from http://shadow.eas.gatech.edu/~Ito/webdata/codes/RSO/
+
+  Source code: MITgcm_c64t.tar.gz to be placed in home
+  RSO mods: rso_mods.tar to be placed in the MITgcm code
+  Runtime options: Drake.64t.10km.42lev.input.tar in scratch under runcase directory
