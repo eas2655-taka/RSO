@@ -3,7 +3,6 @@ Regional Southern Ocean (RSO)
 -----------------------------
 
 - to be used on gulf
-- variable resolution, variable vertical z level
 - default is 10km resolution, 42 vertical z levels
 - execute the following steps
 - model preparation is done in MATLAB
@@ -27,8 +26,7 @@ Regional Southern Ocean (RSO)
 * for 42 and 100 vertical levels, it is already completed.
 
 2. surface forcing: create_surfforcing.m
-* Currently, only monthly NCEP1 is available
-* EraInterim needs to be added in the future
+* Currently, monthly NCEP1
 
 3. side boundary condition: create_bcs.m
 * SODA 2.2.4 monthly
