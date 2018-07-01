@@ -58,3 +58,4 @@ Regional Southern Ocean (RSO)
   Source code: MITgcm_c64t.tar.gz to be placed in home
   RSO mods: rso_mods.tar to be placed in the MITgcm code
   Runtime options: Drake.64t.10km.42lev.input.tar in scratch under runcase directory
+  Ecosystem mods: code_newfe_fixO2.tar 
