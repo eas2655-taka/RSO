@@ -38,6 +38,13 @@ Regional Southern Ocean (RSO)
 * SODA 2.2.4 monthly
 
   At this point you created binary input files necessary to drive the model
+  
+6. Additional MATLAB scripts for the 6 species ecosystem model run
+
+   create_bcs_ecosystem.m  - ecosystem boundary conditions, interpolated from the global simulation
+   create_init_ecosystem.m - ecosystem initial conditions
+   create_3d_input.m       - sedimentary and hydrothermal sources of Fe
+   create_surfforcing_ecosystem.m - atmospheric deposition etc
 
   Execution:
 
