@@ -45,6 +45,8 @@ Regional Southern Ocean (RSO)
    create_init_ecosystem.m - ecosystem initial conditions
    create_3d_input.m       - sedimentary and hydrothermal sources of Fe
    create_surfforcing_ecosystem.m - atmospheric deposition etc
+   grid/ needs to contain grid info (XC, YC, RC) from the physical model
+   Ecosystem_28x28/ contains GCM output used to prepare bc etc. 
 
   Execution:
 
