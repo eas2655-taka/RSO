@@ -21,9 +21,6 @@ disp(char(['y0=',num2str(yn(1)-dy(1)/2)]));
 
 % load topography
 srcdir='grid/';
-hW=rdmds([srcdir,'hFacW']);
-hS=rdmds([srcdir,'hFacS']);
-hC=rdmds([srcdir,'hFacC']);
 zn=-squeeze(rdmds([srcdir,'RC']));
 
 W=5;
