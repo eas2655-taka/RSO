@@ -56,7 +56,3 @@ for i=1:4
      fclose(fid);
 end
 
-% option 2. ERA-Interim
-%European Centre for Medium-Range Weather Forecasts. 2012. ERA-Interim Project, Monthly Means. Research Data Archive at the National Center for Atmospheric Research, Computational and Information Systems Laboratory. https://doi.org/10.5065/D68050NT. Accessed 1ST APR 2018.
-
-
