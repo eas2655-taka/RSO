@@ -23,9 +23,6 @@ N=size(x2);
 
 % load topography
 srcdir='grid/';
-hW=rdmds([srcdir,'hFacW']);
-hS=rdmds([srcdir,'hFacS']);
-hC=rdmds([srcdir,'hFacC']);
 zn=-squeeze(rdmds([srcdir,'RC']));
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
