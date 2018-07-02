@@ -3,8 +3,9 @@ close all;
 clear all;
 
 disp('set case name');
-runcase='ecoUFZ.64t.10km.42lev';
-caseroot='/gpfs/pace1/project/eas-ito/takamitsu3/ufz_ecosystem/';
+runcase='ecoRSO.64t.10km.42lev';
+caseroot='/gpfs/pace1/project/eas-ito/$USER/RSO_cases/';
+cmd=['! mkdir -p',caseroot,runcase]; eval(char(cmd));
 
 %% set path
 addpath matlabfiles
