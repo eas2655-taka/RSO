@@ -2,8 +2,7 @@
 close all;
 clear all;
 
-user = 'youruserid';
-
+user=getenv('USER');
 disp('set case name');
 runcase='ecoRSO.64t.10km.42lev';
 caseroot=['/gpfs/pace1/project/eas-ito/',user,'/RSO_cases/'];
