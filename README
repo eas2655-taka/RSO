@@ -47,7 +47,14 @@ Regional Southern Ocean (RSO)
    create_surfforcing_ecosystem.m - atmospheric deposition etc
    grid/ needs to contain grid info (XC, YC, RC) from the physical model
    Ecosystem_28x28/ contains GCM output used to prepare bc etc. 
+   
+7. Additional MATLAB scripts for 5-year run nested within B-SOSE
 
+   create_bcs_sose.m  - creates monthly side bcs from B-SOSE products. 
+   repeat_bcs.m       - repeats mothly climatological side bcs for non-B-SOSE variables. 
+   proc_woa_monthly.m - surface SST and SSS restoring forcing based on World Ocean Atlas 2013
+   proc_ncep2_XXX_daily.m - generates daily forcing for the surface
+   
   Execution:
 
 - to be used on atlas-6 system
