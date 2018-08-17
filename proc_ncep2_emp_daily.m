@@ -35,7 +35,7 @@ xlv = 2.501e6-2370.*10;
 var='latent'; vars='LHTFL';
 taux=ncread([src,'NCEP2_daily_',var,'.nc'],vars);
 var='precip'; vars='PRATE';
-taux=taux/xlv - ncread([src,'NCEP2_daily_',var,'.nc'],vars);
+taux=taux/xlv - ncread([src,'NCEP2_daily_',var,'.nc'],vars)/1025;
 var='EmP';
 %(here taux is used as a dummy variable)
 
