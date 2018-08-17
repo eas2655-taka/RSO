@@ -1,0 +1,77 @@
+# $Header: /u/gcmpack/MITgcm/verification/global1x1_tot/input/Attic/data.exf,v 1.5 2005/05/27 23:34:50 heimbach Exp $
+#
+# *********************
+# External Forcing Data
+# *********************
+ &EXF_NML_01
+ useExfCheckRange   = .TRUE.,
+ exf_iprec         = 32,
+ exf_yftype        = 'RL',
+ readStressOnCgrid = .TRUE.,
+ repeatperiod=155520000.,
+ exf_verbose=.TRUE.,
+# useExfYearlyFields = .TRUE.,
+#
+ &
+ &EXF_NML_02
+ hfluxstartdate1   = 20080101,
+ hfluxstartdate2   = 000000,
+ hfluxperiod       = 86400.0,
+#
+ sfluxstartdate1   = 20080101,
+ sfluxstartdate2   = 000000,
+ sfluxperiod       = 86400.0,
+#
+ ustressstartdate1 = 20080101,
+ ustressstartdate2 = 000000,
+ ustressperiod     = 86400.0,
+#
+ vstressstartdate1 = 20080101,
+ vstressstartdate2 = 000000,
+ vstressperiod     = 86400.0,
+#
+# swfluxstartdate1  = 20080101,
+# swfluxstartdate2  = 120000,
+# swfluxperiod      = 86400.0,
+#
+# lwfluxstartdate1  = 20080101,
+# lwfluxstartdate2  = 120000,
+# lwfluxperiod      = 86400.0,
+#
+ climsststartdate1  = 20080115,
+ climsststartdate2  = 000000,
+ climsstperiod      = 2592000.0,
+ climsstTauRelax    = 2592000.0,
+#
+ climsssstartdate1  = 20080115,
+ climsssstartdate2  = 000000,
+ climsssperiod      = 2592000.0,
+ climsssTauRelax    = 2592000.0,
+#
+ hfluxfile         = 'NCEP2_Qnet_2008_2012.bin',
+ sfluxfile         = 'NCEP2_EmP_2008_2012.bin',
+ ustressfile       = 'NCEP2_taux_2008_2012.bin',
+ vstressfile       = 'NCEP2_tauy_2008_2012.bin',
+ climsstfile       = 'SST_woa2013v2_repeat5.bin',
+ climsssfile       = 'SSS_woa2013v2_repeat5.bin',
+# exf_inscal_ustress    = -1.,
+# exf_inscal_vstress    = -1.,
+# exf_inscal_runoff     = 3.170979198E-8,
+ &
+ &EXF_NML_03
+ &
+ &EXF_NML_OBCS
+ obcsNstartdate1=20080115,
+ obcsNstartdate2=000000,
+ obcsNperiod=2592000.,
+ obcsSstartdate1=20080115,
+ obcsSstartdate2=000000,
+ obcsSperiod=2592000.,
+ obcsEstartdate1=20080115,
+ obcsEstartdate2=000000,
+ obcsEperiod=2592000.,
+ obcsWstartdate1=20080115,
+ obcsWstartdate2=000000,
+ obcsWperiod=2592000.,
+ &
+
