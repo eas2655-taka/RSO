@@ -5,20 +5,20 @@ clear all;
 yrs=5;
 
 % define grid - Drake Passage -  
-xr=[280 320]; % zonal extent
-yr=[-70 -45]; % meridional extent
-disp('define a new grid');
-xn = linspace(xr(1),xr(2),270);
-yn = linspace(yr(1),yr(2),270);
-you=getenv('USER');
-caseroot=['/data/',you,'/'];
-[x2,y2]=meshgrid(xn,yn);
-x2=x2'; y2=y2';
+%xr=[280 320]; % zonal extent
+%yr=[-70 -45]; % meridional extent
+%disp('define a new grid');
+%xn = linspace(xr(1),xr(2),270);
+%yn = linspace(yr(1),yr(2),270);
+%you=getenv('USER');
+%caseroot=['/data/',you,'/'];
+%[x2,y2]=meshgrid(xn,yn);
+%x2=x2'; y2=y2';
 % ------------------------------
 % alternatively just load in x and y
-x2=rdmds('grid_UFZ/XC');
-y2=rdmds('grid_UFZ/YC');
-N=size(x2);
+%x2=rdmds('grid_UFZ/XC');
+%y2=rdmds('grid_UFZ/YC');
+N=[320 256];
 
 Nt=yrs*12;
 
