@@ -54,6 +54,8 @@ Regional Southern Ocean (RSO)
    repeat_bcs.m       - repeats mothly climatological side bcs for non-B-SOSE variables. 
    proc_woa_monthly.m - surface SST and SSS restoring forcing based on World Ocean Atlas 2013
    proc_ncep2_XXX_daily.m - generates daily forcing for the surface
+   co2_nz.mat - flask CO2 data from Scripps CO2 program in NZD station
+   co2atmos.dat - text file to feed into the model
    
    For this run, we will use cal and exf packages. 
    It needs to be re-compiled with #undef ALLOW_BULKFORMULAE in EXF_OPTIONS.h 
