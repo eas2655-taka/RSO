@@ -1,0 +1,7 @@
+ useCAL   =.TRUE.,
+ useEXF   =.TRUE.,
+ useKPP   =.TRUE.,
+ useOBCS  =.TRUE.,
+ useDiagnostics=.TRUE.,
+ usePTRACERS=.TRUE.,
+ useGCHEM=.TRUE.,
