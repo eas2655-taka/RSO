@@ -1,0 +1,21 @@
+ &DARWIN_FORCING
+ darwin_ironFile='solfe_repeat5.bin',
+ darwin_ndepFile='ndep_repeat5.bin',
+ darwin_PARFile='par_repeat5.bin',
+ darwin_relaxscale=0.,
+ darwin_seed=56,
+ darwin_hydroFeFile='hydroFe_UFZ.bin',
+ darwin_sedfFile='sedimentFe_UFZ.bin',
+ /
+
+ &DIC_FORCING
+ DIC_windFile  = 'wspd_repeat5.bin',
+ dic_int1 =2,
+ dic_int2 =456,
+ dic_int3 =-829440,
+ dic_int4 =2880,
+ /
+
+ &darwin_ironparam
+ R_L1doc = 0.73E-4,
+ /
