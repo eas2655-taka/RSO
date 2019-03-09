@@ -84,6 +84,7 @@ end
 end % loop over selyear
 
 % write it out
+taux2(isnan(taux2))=0;
 fn=['NCEP2_',var,'_',num2str(selyear(1)),'_',num2str(selyear(end)),'.bin'];
 fid=fopen(fn,'w','ieee-be');
 fwrite(fid,taux2,'float32');
