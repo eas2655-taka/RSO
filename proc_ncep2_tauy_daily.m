@@ -18,10 +18,10 @@ caseroot=['/data/',you,'/'];
 x2=x2'; y2=y2';
 % ------------------------------
 % alternatively just load in x and y
-x2=rdmds('grid_UFZ/XC');
-y2=rdmds('grid_UFZ/YC');
-N=size(x2);
+%x2=rdmds('grid_UFZ/XC');
+%y2=rdmds('grid_UFZ/YC');
 % ------------------------------
+N=size(x2);
 
 disp('read coordinates of raw data');
 src='/data/dataset/atmos/reanalysis/ncep2/daily/';
@@ -67,7 +67,7 @@ for yr=1979:2017
          for i=1:length(x)
             for j=1:length(y)
                % interpolate the 365/366 days into 360 days
-               taux1(i,j,:)=interp1([1:ds]',squeeze(taux0(i,j,1:ds)),[1:360]');
+               taux1(i,j,:)=interp1([1:ds]/ds',squeeze(taux0(i,j,1:ds)),[1:360]/360');
             end % y
          end % x
       end % if statement to select year
