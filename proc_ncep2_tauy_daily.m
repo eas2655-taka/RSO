@@ -20,8 +20,8 @@ x2=x2'; y2=y2';
 % alternatively just load in x and y
 %x2=rdmds('grid_UFZ/XC');
 %y2=rdmds('grid_UFZ/YC');
-N=size(x2);
 % ------------------------------
+N=size(x2);
 
 disp('read coordinates of raw data');
 src='/data/dataset/atmos/reanalysis/ncep2/daily/';
