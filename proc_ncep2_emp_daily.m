@@ -18,8 +18,8 @@ caseroot=['/data/',you,'/'];
 x2=x2'; y2=y2';
 % ------------------------------
 % alternatively just load in x and y
-x2=rdmds('grid_UFZ/XC');
-y2=rdmds('grid_UFZ/YC');
+%x2=rdmds('grid_UFZ/XC');
+%y2=rdmds('grid_UFZ/YC');
 N=size(x2);
 % ------------------------------
 
@@ -68,7 +68,7 @@ for yr=1979:2017
          for i=1:length(x)
             for j=1:length(y)
                % interpolate the 365/366 days into 360 days
-               taux1(i,j,:)=interp1([1:ds]',squeeze(taux0(i,j,1:ds)),[1:360]');
+               taux1(i,j,:)=interp1([1:ds]/ds',squeeze(taux0(i,j,1:ds)),[1:360]/360');
             end % y
          end % x
       end % if statement to select year
@@ -84,6 +84,7 @@ end
 end % loop over selyear
 
 % write it out
+taux2(isnan(taux2))=0;
 fn=['NCEP2_',var,'_',num2str(selyear(1)),'_',num2str(selyear(end)),'.bin'];
 fid=fopen(fn,'w','ieee-be');
 fwrite(fid,taux2,'float32');
