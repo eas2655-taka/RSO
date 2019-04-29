@@ -68,7 +68,7 @@ for n=1:N(4)
 end
 
 % calculate regionally averaged eke time series
-ekets = squeeze(mean(mean(eke(I,J,:),1),2));
+ekets = squeeze(mean(mean(eke,1),2));
 
-save eke_obs.mat -v7.3 ekets eke I J x y time1;
+save eke_obs.mat -v7.3 ekets ssh eke I J x y time1;
 
