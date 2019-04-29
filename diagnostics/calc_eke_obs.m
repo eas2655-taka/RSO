@@ -1,4 +1,4 @@
-%% calc_eke_obs.m
+%% calc_eke_Drake.m
 
 % v0. Taka Ito 2019
 
@@ -16,15 +16,26 @@ clear all
 load /data/ito/SSH/ssh_obs_SO.mat;
 
 % select regions
-xr=[0 360];
-yr=[-90 -45];
+xr=[280 320];
+yr=[-70 -45];
 
-% get the size of the array
-N=size(ssh);
+% select period
+tr=[2008 2013];
+t0=time(1,:)/365+1985;
 
 % calculate indices for the box
 I=find(x>xr(1)&x<xr(2));
 J=find(y>yr(1)&y<yr(2));
+K=find(t0>tr(1)&t0<tr(2));
+
+% crop the field
+x = x(I);
+y = y(J);
+time = time(:,K);
+ssh = ssh(I,J,:,K);
+
+% get the size of the array
+N=size(ssh);
 
 % calculate dx and dy
 dy=1/6*6.37e6*pi/180;
