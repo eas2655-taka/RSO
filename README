@@ -1,8 +1,10 @@
 -----------------------------
 Regional Southern Ocean (RSO)
 -----------------------------
+- All the scripts are prepared for execution on atlas-6 system at Georgia Institute of Technology. 
+- However, any of these scripts can be modified to run on other architectures. 
 
-- to be used on gulf
+- input prep codes are to be used on gulf@eas
 - default is 10km resolution, 42 vertical z levels
 - execute the following steps
 - model preparation is done in MATLAB
