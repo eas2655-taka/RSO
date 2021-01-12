@@ -10,9 +10,13 @@
 
  &DIC_FORCING
  DIC_windFile  = 'wspd_repeat5.bin',
- dic_int1 =2,
+ # 2 indicates prescribed atmospheric pCO2 with external input file, co2atmos.dat
+ dic_int1 =2, 
+ # dic_int2 is the number of pCO2 entry
  dic_int2 =456,
+ # dic_int3 is the time step number of the first pCO2 entry
  dic_int3 =-829440,
+ # dic_int4 is the interval length of each pCO2 entry
  dic_int4 =2880,
  /
 
