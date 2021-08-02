@@ -1,6 +1,12 @@
 -----------------------------
 Regional Southern Ocean (RSO)
 -----------------------------
+
+version 2. August 2021
+code_rso_v2.tar includes updated modifications to the MITgcm model source code
+This is required to reproduce the runs in Jersild, Ito and Delawalla (submitted) and in Ito (in prep)
+
+-----------------------------
 - All the scripts are prepared for execution on atlas-6 system at Georgia Institute of Technology. 
 - However, any of these scripts can be modified to run on other architectures. 
 
